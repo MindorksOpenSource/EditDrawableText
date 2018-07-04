@@ -10,6 +10,13 @@
 ## Preview of EditDrawableText
 <img src="https://github.com/MindorksOpenSource/EditDrawableText/blob/master/app/src/main/assets/sample1.jpg?raw=true" height="300em" />&nbsp;<img src="https://github.com/MindorksOpenSource/EditDrawableText/blob/master/app/src/main/assets/sample2.jpg?raw=true" height="300em" />
 
+
+### Overview of EditDrawableText library
+* EditDrawableText can be used to Show/Hide Password
+* Left/Right Drawables can be clicked to make custom events like Request OTP etc.
+* All type of EditText Properties are possible in EditDrawableText
+
+
 ## Using EditDrawableText Library in your Android application
 
 1. Add it in your root build.gradle at the end of repositories:

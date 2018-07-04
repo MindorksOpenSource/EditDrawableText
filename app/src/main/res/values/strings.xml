@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EditDrawableTextSample</string>
+    <string name="clickTheDrawables">Click the drawable</string>
+    <string name="left_drawable_clicked">Clicked Left Drawable</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalDependencies">
+    <plugin id="com.android.tools.games" />
+    <plugin id="com.android.tools.ndk" />
+    <plugin id="com.google.urlassistant" />
+    <plugin id="com.intellij.copyright" />
+    <plugin id="org.jetbrains.android" />
+  </component>
+</project>

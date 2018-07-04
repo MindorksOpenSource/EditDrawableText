@@ -38,15 +38,7 @@ class EditDrawableText : EditText {
         if (event.action == MotionEvent.ACTION_DOWN) {
             positionX = event.x.toInt()
             positionY = event.y.toInt()
-            if (drawableBottom != null && drawableBottom!!.bounds.contains(positionX, positionY)) {
-                onDrawableClickListener!!.onClick(DrawablePosition.BOTTOM)
-                return super.onTouchEvent(event)
-            }
-            
-            if (drawableTop != null && drawableTop!!.bounds.contains(positionX, positionY)) {
-                onDrawableClickListener!!.onClick(DrawablePosition.TOP)
-                return super.onTouchEvent(event)
-            }
+           
             
             // this works for left since container shares 0,0 origin with bounds
             if (drawableLeft != null) {

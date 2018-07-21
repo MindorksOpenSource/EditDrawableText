@@ -51,6 +51,8 @@
                 when (target) {
                     DrawablePosition.RIGHT -> //YOUR_LOGIC
                     DrawablePosition.LEFT -> //YOUR_LOGIC
+                    DrawablePosition.TOP -> //YOUR_LOGIC
+                    DrawablePosition.BOTTOM -> //YOUR_LOGIC
                 }
             }      
     })

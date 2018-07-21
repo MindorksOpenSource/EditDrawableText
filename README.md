@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Preview of EditDrawableText
-<img src="https://github.com/MindorksOpenSource/EditDrawableText/blob/master/app/src/main/assets/sample1.jpg?raw=true" height="300em" />&nbsp;<img src="https://github.com/MindorksOpenSource/EditDrawableText/blob/master/app/src/main/assets/sample2.jpg?raw=true" height="300em" />
+<img src="https://github.com/MindorksOpenSource/EditDrawableText/blob/master/app/src/main/assets/sample1.jpg?raw=true" height="300em" />&nbsp;<img src="https://github.com/MindorksOpenSource/EditDrawableText/blob/master/app/src/main/assets/sample2.jpg?raw=true" height="300em" />&nbsp;<img src="https://github.com/pranaypatel512/EditDrawableText/blob/development/app/src/main/assets/sample3.jpg?raw=true" height="300em" />&nbsp;<img src="https://github.com/pranaypatel512/EditDrawableText/blob/development/app/src/main/assets/sample4.jpg?raw=true" height="300em" />
 
 
 ### Overview of EditDrawableText library
@@ -35,7 +35,7 @@
 
 ```XML
   <com.mindorks.editdrawabletext.EditDrawableText
-        android:id="@+id/drawable_editText_left"
+        android:id="@+id/drawableEditTextLeft"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_remove_red_eye_black_24dp"
@@ -46,7 +46,7 @@
 ```
 4. Make the drawable clickable in Activity file,
 ```kotlin
-  drawable_editText.setDrawableClickListener(object : onDrawableClickListener {
+  drawableEditText.setDrawableClickListener(object : OnDrawableClickListener {
             override fun onClick(target: DrawablePosition) {
                 when (target) {
                     DrawablePosition.RIGHT -> //YOUR_LOGIC

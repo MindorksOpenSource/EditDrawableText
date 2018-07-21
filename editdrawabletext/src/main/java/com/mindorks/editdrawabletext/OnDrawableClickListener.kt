@@ -1,5 +1,5 @@
 package com.mindorks.editdrawabletext
 
-interface onDrawableClickListener {
+interface OnDrawableClickListener {
     fun onClick(target: DrawablePosition)
 }

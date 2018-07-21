@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Preview of EditDrawableText
-<img src="https://github.com/MindorksOpenSource/EditDrawableText/blob/master/app/src/main/assets/sample1.jpg?raw=true" height="300em" />&nbsp;<img src="https://github.com/MindorksOpenSource/EditDrawableText/blob/master/app/src/main/assets/sample2.jpg?raw=true" height="300em" />&nbsp;<img src="https://github.com/pranaypatel512/EditDrawableText/blob/development/app/src/main/assets/sample3.jpg?raw=true" height="300em" />&nbsp;<img src="https://github.com/pranaypatel512/EditDrawableText/blob/development/app/src/main/assets/sample4.jpg?raw=true" height="300em" />
+<img src="https://github.com/MindorksOpenSource/EditDrawableText/blob/master/app/src/main/assets/sample1.jpg?raw=true" height="300em" />&nbsp;<img src="https://github.com/MindorksOpenSource/EditDrawableText/blob/master/app/src/main/assets/sample2.jpg?raw=true" height="300em" />&nbsp;<img src="https://github.com/pranaypatel512/EditDrawableText/blob/development/app/src/main/assets/sample3.png?raw=true" height="300em" />&nbsp;<img src="https://github.com/pranaypatel512/EditDrawableText/blob/development/app/src/main/assets/sample4.png?raw=true" height="300em" />
 
 
 ### Overview of EditDrawableText library

@@ -6,22 +6,23 @@ import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.widget.EditText
+import kotlin.math.abs
 
 class EditDrawableText : EditText {
-    
+
     private var drawableRight: Drawable? = null
     private var drawableLeft: Drawable? = null
     private var drawableTop: Drawable? = null
     private var drawableBottom: Drawable? = null
     private var positionX: Int = 0
     private var positionY: Int = 0
-    
-    private var onDrawableClickListener: onDrawableClickListener? = null
-    
+
+    private var onDrawableClickListener: OnDrawableClickListener? = null
+
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs)
-    
+
     constructor(context: Context, attrs: AttributeSet, defStyle: Int) : super(context, attrs, defStyle)
-    
+
     override fun setCompoundDrawables(leftDrawable: Drawable?,
                                       topDrawable: Drawable?,
                                       rightDrawable: Drawable?,
@@ -43,34 +44,34 @@ class EditDrawableText : EditText {
             // this works for left since container shares 0,0 origin with bounds
             if (drawableLeft != null) {
                 bounds = drawableLeft!!.bounds
-                
+
                 var xClickPosition: Int
                 var yClickPosition: Int
                 /*
                  * @return pixels into dp
                  */
                 val extraClickArea = (13 * resources.displayMetrics.density + 0.5).toInt()
-                
+
                 xClickPosition = positionX
                 yClickPosition = positionY
-                
+
                 if (!bounds!!.contains(positionX, positionY)) {
                     /** Gives some extra space for tapping.  */
                     xClickPosition = positionX - extraClickArea
                     yClickPosition = positionY - extraClickArea
-                    
+
                     if (xClickPosition <= 0) xClickPosition = positionX
                     if (yClickPosition <= 0) yClickPosition = positionY
-                    
+
                     /** Creates square from the smallest value  from x or y*/
                     if (xClickPosition < yClickPosition) yClickPosition = xClickPosition
                 }
-                
+
                 if (bounds.contains(xClickPosition, yClickPosition) && onDrawableClickListener != null) {
                     onDrawableClickListener!!.onClick(DrawablePosition.LEFT)
                     event.action = MotionEvent.ACTION_CANCEL
                     return false
-                    
+
                 }
             }
             
@@ -104,14 +105,37 @@ class EditDrawableText : EditText {
                 }
                 return super.onTouchEvent(event)
             }
-            
+
+            if (drawableTop != null) {
+                bounds = drawableTop!!.bounds
+                val extraClickingArea = 13
+                if (abs((width - paddingLeft - paddingRight) / 2 + paddingLeft - positionX) <= bounds.width() / 2 + extraClickingArea) {
+                    onDrawableClickListener!!.onClick(DrawablePosition.TOP)
+                    event.action = MotionEvent.ACTION_CANCEL
+                    return false
+                }
+            }
+
+            if(drawableBottom!=null)
+            {
+                bounds = drawableBottom!!.bounds
+                val extraClickingArea = 13
+
+                if (abs((width - paddingLeft - paddingRight) / 2 + paddingLeft - positionX) <= bounds.width() / 2 + extraClickingArea) {
+                    onDrawableClickListener!!.onClick(DrawablePosition.BOTTOM)
+                    event.action = MotionEvent.ACTION_CANCEL
+                    return false
+                }
+            }
+
+
         }
         return super.onTouchEvent(event)
     }
-    
-    
-    fun setDrawableClickListener(onDrawableClickListener: onDrawableClickListener) {
-        this.onDrawableClickListener = onDrawableClickListener
+
+
+    fun setDrawableClickListener(OnDrawableClickListener: OnDrawableClickListener) {
+        this.onDrawableClickListener = OnDrawableClickListener
     }
-    
+
 }

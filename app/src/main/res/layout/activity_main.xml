@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <com.mindorks.editdrawabletext.EditDrawableText
-        android:id="@+id/drawable_editText"
+        android:id="@+id/drawableEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableRight="@drawable/ic_remove_red_eye_black_24dp"
@@ -21,11 +21,37 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <com.mindorks.editdrawabletext.EditDrawableText
-        android:id="@+id/drawable_editText_left"
+        android:id="@+id/drawableEditTextLeft"
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_remove_red_eye_black_24dp"
+        android:hint="@string/clickTheDrawables"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.mindorks.editdrawabletext.EditDrawableText
+        android:id="@+id/drawableEditTextTop"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_remove_red_eye_black_24dp"
+        android:hint="@string/clickTheDrawables"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.mindorks.editdrawabletext.EditDrawableText
+        android:id="@+id/drawableEditTextBottom"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/ic_remove_red_eye_black_24dp"
         android:hint="@string/clickTheDrawables"
         android:inputType="text"
         android:textAlignment="center"

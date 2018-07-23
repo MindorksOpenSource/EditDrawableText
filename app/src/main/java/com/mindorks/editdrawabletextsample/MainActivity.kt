@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             
-            
         })
         drawable_editText_left.setDrawableClickListener(object : onDrawableClickListener {
             override fun onClick(target: DrawablePosition) {

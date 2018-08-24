@@ -6,7 +6,6 @@
 [![Mindorks](https://img.shields.io/badge/mindorks-opensource-blue.svg)](https://mindorks.com/open-source-projects)
 [![Mindorks Community](https://img.shields.io/badge/join-community-blue.svg)](https://mindorks.com/join-community)
 [![Mindorks Android Store](https://img.shields.io/badge/Mindorks%20Android%20Store-EditDrawableText-blue.svg?style=flat)](https://mindorks.com/android/store)
-
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Preview of EditDrawableText

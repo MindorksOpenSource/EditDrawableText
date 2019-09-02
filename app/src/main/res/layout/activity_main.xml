@@ -12,6 +12,7 @@
         android:id="@+id/drawableEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:isDrawableShownWhenTextIsEmpty="false"
         android:drawableRight="@drawable/ic_remove_red_eye_black_24dp"
         android:hint="@string/clickTheDrawables"
         android:inputType="text"

@@ -59,8 +59,21 @@
     })
 
 ```
-### TODO
-* More features related to EditText
+
+5. You can also add an option so that the drawable is hidden by default and only shows when there is some text available in EditDrawableText
+```XML
+  <com.mindorks.editdrawabletext.EditDrawableText
+           ....
+           app:isDrawableShownWhenTextIsEmpty="false"
+        />
+```
+or
+```kotlin
+  drawableEditText.hasDrawable(/**YOUR VALUE**/)
+
+```
+When the value is false, then the drawable is hidden by default and vice versa
+
 
 ## If this library helps you in anyway, show your love :heart: by putting a :star: on this project :v:
 

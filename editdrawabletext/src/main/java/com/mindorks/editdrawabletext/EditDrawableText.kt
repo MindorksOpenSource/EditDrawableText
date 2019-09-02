@@ -38,7 +38,7 @@ class EditDrawableText(context: Context, attrs: AttributeSet) : EditText(context
         hasDrawable(isDrawableShownWhenTextIsEmpty)
     }
 
-    private fun hasDrawable(value: Boolean) {
+    fun hasDrawable(value: Boolean) {
         isDrawableShownWhenTextIsEmpty = value
         if (!isDrawableShownWhenTextIsEmpty) this.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0)
         invalidate()

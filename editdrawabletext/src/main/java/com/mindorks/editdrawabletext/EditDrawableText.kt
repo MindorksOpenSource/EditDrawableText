@@ -32,7 +32,6 @@ class EditDrawableText(context: Context, attrs: AttributeSet) : EditText(context
         )
     }
 
-
     private fun parseAttributes(obtainStyledAttributes: TypedArray) {
         isDrawableShownWhenTextIsEmpty = obtainStyledAttributes.getBoolean(R.styleable.EditDrawableText_isDrawableShownWhenTextIsEmpty, isDrawableShownWhenTextIsEmpty);
         obtainStyledAttributes.recycle()

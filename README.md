@@ -30,7 +30,7 @@
 2. Add this in your app's build.gradle
 
 ```groovy
-	 implementation 'com.github.MindorksOpenSource:EditDrawableText:1.2.0'
+	 implementation 'com.github.MindorksOpenSource:EditDrawableText:2.0'
 ```
 3. To use this in XML File, use 
 

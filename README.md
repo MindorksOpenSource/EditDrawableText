@@ -65,12 +65,11 @@
   <com.mindorks.editdrawabletext.EditDrawableText
            ....
            app:isDrawableShownWhenTextIsEmpty="false"
-
         />
 ```
 or
 ```kotlin
-           drawableEditText.hasDrawable(/**YOUR VALUE**/)
+  drawableEditText.hasDrawable(/**YOUR VALUE**/)
 
 ```
 When the value is false, then the drawable is hidden by default and vice versa

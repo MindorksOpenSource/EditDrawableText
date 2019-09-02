@@ -70,7 +70,7 @@
 ```
 or
 ```kotlin
-           drawableEditTextTop.hasDrawable(/**YOUR VALIUE**/)
+           drawableEditTextTop.hasDrawable(/**YOUR VALUE**/)
 
 ```
 When the value is false, then the drawable is hidden by default and vice versa
